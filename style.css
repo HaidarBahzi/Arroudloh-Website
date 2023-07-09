@@ -1,0 +1,382 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.5s all;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+body {
+  background-image: url(Gambar/background.webp);
+}
+
+#loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 2;
+}
+
+.loader {
+  border-radius: 50%;
+  border: 1.5vh solid transparent;
+  border-top-color: green;
+  border-bottom-color: green;
+  animation: rotate 2s infinite;
+  padding: 7.5vh;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0turn;
+  }
+
+  to {
+    rotate: 1turn;
+  }
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-logo img {
+  height: 10vh;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vh;
+}
+
+.nav-links a {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 2.65vh;
+}
+
+.nav-links a:hover {
+  color: green;
+}
+
+.nav-links-mobile {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+.nav-links-mobile a {
+  color: black;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2.25vh;
+}
+
+.background-slider {
+  width: 100%;
+  min-height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.container-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vh;
+  min-height: inherit;
+  width: inherit;
+  color: white;
+}
+
+.container-home span {
+  font-size: 9vh;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-home p {
+  font-size: 4.5vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.container-home button {
+  padding: 10px 25px;
+  font-size: 2.5vh;
+  background-color: green;
+  border: 2.5px solid green;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-home button:hover {
+  background-color: transparent;
+}
+
+.pelayanan {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.pelayanan-title span {
+  color: black;
+  opacity: 0.75;
+}
+
+.pelayanan-title p {
+  font-size: 8vh;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-box-pelayanan {
+  display: flex;
+  padding-top: 10vh;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5vh;
+}
+
+.container-box-pelayanan-item {
+  width: 80vh;
+  height: 35vh;
+  padding: 0 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.container-box-pelayanan-item:hover {
+  transform: scale(105%);
+}
+
+.box-pelayanan-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  text-align: left;
+}
+
+.box-pelayanan-text span {
+  font-size: 4.75vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.box-pelayanan-text p {
+  font-size: 2.55vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-box-pelayanan-item i {
+  font-size: 15vh;
+  color: green;
+}
+
+.more-info {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-testimoni {
+  width: 100%;
+  min-height: 75vh;
+  background-image: url(Gambar/background-testimoni.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.container-testimoni i {
+  font-size: 10vh;
+  color: gray;
+}
+
+.testimoni-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vh;
+  text-align: center;
+  color: black;
+}
+
+.testimoni-text span {
+  font-size: 6vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.testimoni-text p {
+  width: 85%;
+  font-size: 3.25vh;
+}
+
+footer {
+  min-height: 50vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  padding-top: 5vh;
+}
+
+.footer-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+}
+
+.footer-profil {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.footer-profil span {
+  font-size: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.footer-profil p {
+  font-size: 2.65vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+iframe {
+  min-height: 50vh;
+  width: 100vh;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.footer-social span {
+  font-size: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.footer-social a {
+  font-size: 2.65vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+@media (max-width: 50em) {
+  * {
+    text-align: center;
+  }
+
+  .nav-logo img {
+    width: 25vh;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+  }
+
+  .nav-links ul {
+    display: none;
+  }
+
+  .container-home {
+    background-image: url(Gambar/background.webp);
+    color: green;
+  }
+
+  .container-home span,
+  .pelayanan-title p {
+    font-size: 5vh;
+  }
+
+  .container-home p {
+    font-size: 2vh;
+  }
+
+  .pelayanan {
+    flex-direction: column;
+  }
+
+  .container-box-pelayanan-item {
+    width: 100%;
+    min-height: 60vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 45vh;
+  }
+
+  .footer-profil p {
+    font-size: 1.55vh;
+    width: 100%;
+  }
+}

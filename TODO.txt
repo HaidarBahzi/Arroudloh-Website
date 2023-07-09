@@ -1,0 +1,26 @@
+#F0F0F0
+#F8F9F9
+
+
+
+
+    
+	<meta name="url" content="">
+	<meta name="identifier-URL" content="">
+
+
+
+	Assalamualaikum, saya ingin mengetahui lebih lanjut tentang pondok ini. Mohon informasinya 🙏
+
+	https://api.whatsapp.com/send?phone=6281226226318&text=Assalamualaikum%20Mohon%20informasi%20lebih%20lanjut%20untuk%20GRATIS%20Biaya%20Pendaftaran%20sebesar%20Rp.500.000,-
+
+
+	<iframe
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/gqeLSiv1R8M"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
